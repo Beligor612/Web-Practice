@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+header{
+    height: 800px;
+    width: 1280px;
+    margin: auto;
+    background-image: url(images/city.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo{
+    margin-top: 35px;
+}
+
+.text-logo{
+    color: white;
+    font-size: 49px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.press-me{
+    position: absolute;
+    top: 550px;
+    height: 320px;
+    width: 380px;
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.oneRoll img{
+    margin: 0px;
+    padding: 0px;
+    
+}
+.press-me p{
+    text-align: center;
+}
+
+.content{
+    height: 450px;
+    width: 1280px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.content div{
+    margin-left: 25px;
+}
+.content div img{
+    float: left;
+    margin-right: 10px;
+}
+
+footer{
+    width: 1280px;
+    height: 45px;
+    margin: auto;
+    background-color: #43a06d;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+main{
+    height: 1000px;
+    width: 1280px;
+    margin: auto;
+    background-color: #43a06d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main div{
+    color: white;
+    width: 700px;
+    /* border: 1px solid black; */
+    margin: auto;
+}
+
+main .first-screen img{
+    margin-left: 35%;
+}
+main .first-screen p{
+    margin-top: 25px;
+}
+main .second-screen img{
+    float: left;
+}
+main .second-screen button{
+    height: 45px;
+    width: 125px;
+    background-color: #43a06d;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    margin-left: 50px;
+    
+}
+
+main .second-screen button:hover{
+    background-color: #29b96a;
+}
+
+.map-conteiner{
+    height: 635px;
+    width: 1280px;
+    margin: auto;
+    background-image: url(images/map/map.png);
+    padding-top: 100px;
+}
+.circle{
+    background-image: url(images/map/circle.png);
+    width: 438px;
+    height: 438px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.circle input{
+    margin-bottom: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.479);
+}
+
+.circle textarea{
+    border: 1px solid rgba(128, 128, 128, 0.479);
+    height: 100px;
+    margin-bottom: 35px;
+}
+
+#checker{
+    height: 67px;
+    width: 66px;
+    background: url(images/map/check.png);
+    border: none;
+}
