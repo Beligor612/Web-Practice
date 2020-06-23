@@ -1,0 +1,459 @@
+
+// OpenSansBold
+@font-face{
+    font-family: "OpenSansBold";
+    src: url(../fonts/Open_Sans/OpenSans-Bold.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+// OpenSans
+@font-face{
+    font-family: "OpenSans";
+    src: url(../fonts/Open_Sans/OpenSans-Light.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+// ReeyRegular
+@font-face{
+    font-family: "ReeyRegular";
+    src: url(../fonts/Reey-Regular.otf) format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+header{
+    width: 1445px;
+    height: 1055px;
+    background-image: url(../images/background/Header_Background.png);
+    margin: auto;
+
+
+    nav{
+        color: white;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        margin-right: 45px;
+        margin-bottom: 35px;
+        ul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+
+            li{
+                list-style: none;
+                margin-right: 35px;
+                margin-top: 35px;
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-family: "OpenSansBold" ;
+                    font-size: 16px;
+
+
+                    &:visited{
+                        color: white;
+                    }
+                
+                }
+
+
+            }
+        }
+        
+    }
+    .search{
+        width: 150px;
+        height: 50px;
+        background: url(../images/icons/Search.png) no-repeat 7px;
+        background-color: white;
+        border-radius: 25px;
+        border: none;
+    }
+.main-header{
+    display: flex;
+
+    .header-content{
+        color: white;
+        width: 675px;
+        margin-left: 75px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+
+        .heading{
+            font-family: 'ReeyRegular';
+            font-size: 92px;
+        }
+
+        h3{
+            font-family: 'OpenSansBold';
+            font-style: italic;
+        }
+        .button{
+            font-family: 'OpenSansBold';
+            font-size: 18px;
+            color: rgba(34, 34, 34, 0.952);
+            width: 180px;
+            height: 50px;
+            border-radius: 35px;
+            margin-bottom: 35px;
+            margin-top: 35px;
+        }
+        .text{
+            width: 300px;
+            font-family: 'OpenSansBold';
+        }
+    }
+    .food_image_1{
+        position: relative;
+        margin-top: 190px;
+        .plate{
+            position: absolute;
+            left: 55px
+        }
+        .sous{
+            position: absolute;
+            top: 500px;
+            left: -75px;
+
+        }
+        .leafes{
+            position: absolute;
+            top: 400px;
+            left: 150px;
+        }
+    }
+}
+}
+    
+main{
+    .first-screen{
+    width: 1445px;
+    height: 1055px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h1{
+        font-family: 'ReeyRegular';
+        font-size: 90px;
+
+    }
+    .headering{
+        font-family: 'OpenSans';
+        font-size: 25px;
+        text-align: center;
+    }
+    .menu{
+        display: flex;
+        .content{
+            margin: 5px 50px 5px 50px;
+
+            img{
+                display: block;
+                margin: auto;
+                margin-bottom: 50px;
+            }
+            h3{
+                font-family: 'OpenSansBold';
+                color: rgb(51, 51, 51);
+            }
+            p{
+                width: 250px;
+            }
+
+            @keyframes Cards {
+                25%{
+                    box-shadow: 2px 1px 2px rgba(0,0,0,0.5);
+                }
+                50%{
+                    box-shadow: 5px 1px 5px rgba(0,0,0,0.5);
+                }
+                75%{
+                    box-shadow: 7px 2px 7px rgba(0,0,0,0.5);
+                }
+                100%{
+                    box-shadow: 10px 2px 10px rgba(0,0,0,0.5);
+                }
+            }
+
+            &:hover{
+                transition-duration: 1s;
+                animation: Cards 2s forwards linear;
+            }
+
+            
+        }
+            
+        }
+    .button{
+        display: block;
+        width: 250px;
+        height: 70px;
+        border-radius: 35px;
+        background-color: #343434;
+        color: white;
+        border: none;
+        font-family: 'OpenSansBold';
+        font-size: 18px;
+
+        @keyframes button {
+            50%{
+                background-color: rgb(156, 156, 156);
+            }
+            100%{
+                color: #343434;
+                background-color: white;
+            }
+        }
+        &:hover{
+            animation: button 0.5s forwards;
+        }
+    }
+    }
+    .second-screen{
+        width: 1445px;
+        height: 560px;
+        margin: auto;
+        background-color: #27292c;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        h1{
+            font-family: 'ReeyRegular';
+            font-size: 90px;
+        }
+        .content{
+            display: flex;
+            justify-content: space-around;
+
+            p{
+                width: 490px;
+                font-family: 'OpenSans';
+                
+            }
+        }
+        .button{
+                font-family: 'OpenSansBold';
+                font-size: 18px;
+                color: rgba(34, 34, 34, 0.952);
+                width: 180px;
+                height: 50px;
+                border-radius: 35px;
+                margin-bottom: 35px;
+                margin-top: 35px;
+            
+        }
+    }
+    .third-screen{
+        width: 1445px;
+        height: 1515px;
+        margin: auto;
+        margin-top: 15px;;
+
+        article{
+            display: flex;
+            align-items: center;
+
+            
+            h3{
+                font-family: 'OpenSansBold';
+                font-size: 56px;
+            }
+            p{
+                font-family: 'OpenSans';
+                font-size: 36px;
+            }
+            .button{
+                display: block;
+                width: 250px;
+                height: 70px;
+                border-radius: 35px;
+                background-color: #343434;
+                color: white;
+                border: none;
+                font-family: 'OpenSansBold';
+                font-size: 18px;
+                margin-left: 150px;
+            }
+        
+    }
+    .right{
+        flex-direction: row-reverse;
+    }
+    }
+    .fourth-screen{
+        width: 1445px;
+        height: 1055px;
+        background-image: url(../images/food/fourth-screen/Background.png);
+        margin: auto;
+        color: white;
+        position: relative;
+
+        .content{
+            position: absolute;
+            top: 50px;
+            left: 300px;
+            text-align: center;
+        }
+        h3{
+            font-family: 'ReeyRegular';
+            font-size: 48px;
+        }
+        p{  
+            font-family: 'OpenSansBold';
+            font-size: 16px;
+        }
+        .pizza{
+            position: absolute;
+            top: 400px;
+            left: 200px
+        }
+        .leafes{
+            position: absolute;
+            left: -50px;
+            top: -150px;
+        }
+    }
+    .fifth-screen{
+        width: 1280px;
+        height: 900px;
+        margin: auto;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+
+        .content{
+            margin-top: 150px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            article{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h3{
+                    font-family: 'ReeyRegular';
+                    font-size: 36px;
+                }
+                p{
+                    font-family: 'OpenSans';
+                    font-size: 24px;
+                }
+            }
+        }
+        .second-content{
+            margin-top: 250px;
+            text-align: center;
+            p{
+                margin-top: 25px;
+                font-family: 'OpenSans';
+                font-size: 18px;
+            }
+        }
+    }
+    .sixth-screen{
+        width: 1280px;
+        height: 600px;
+        margin: auto;
+        background-color: #27292c;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        color: white;
+        position: relative;
+        padding-top: 150px;
+
+        h2{
+            font-family: OpenSansBold;
+            font-size: 56px
+        }
+        p{
+            font-family: OpenSans;
+            font-size: 25px;
+            text-align: center;
+        }
+        img{
+            position: absolute;
+            top:-90px;
+            left: -120px;
+        }
+
+        .email{
+            position: relative;
+            #email{
+                width: 500px;
+                height: 50px;
+                border-radius: 25px;
+            }
+            .button{
+                position: absolute;
+                top:2px;
+                left: 110px;
+                display: block;
+                width: 250px;
+                height: 55px;
+                border-radius: 25px;
+                background-color: #343434;
+                color: white;
+                border: none;
+                font-family: 'OpenSansBold';
+                font-size: 18px;
+                margin-left: 150px;
+            }
+        }
+    }
+}
+footer{
+    width: 1280px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    h3{
+        font-family: OpenSans;
+            font-size: 25px;
+    }
+    p{
+        font-family: OpenSans;
+            font-size: 15px;
+    }
+    ul{
+        padding: 0px;
+    }
+    li{
+        list-style-type: none;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    .first-content{
+        width: 450px;
+    }
+    .second-content{
+        display: flex;
+        // justify-content: space-evenly;
+        // align-items: center;
+        nav{
+            margin-left: 50px;
+        }
+    }
+    
+}

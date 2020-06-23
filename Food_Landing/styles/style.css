@@ -1,0 +1,615 @@
+@font-face {
+  font-family: "OpenSansBold";
+  src: url(../fonts/Open_Sans/OpenSans-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url(../fonts/Open_Sans/OpenSans-Light.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ReeyRegular";
+  src: url(../fonts/Reey-Regular.otf) format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+header {
+  width: 1445px;
+  height: 1055px;
+  background-image: url(../images/background/Header_Background.png);
+  margin: auto;
+}
+
+header nav {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 45px;
+  margin-bottom: 35px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header nav ul li {
+  list-style: none;
+  margin-right: 35px;
+  margin-top: 35px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "OpenSansBold";
+  font-size: 16px;
+}
+
+header nav ul li a:visited {
+  color: white;
+}
+
+header .search {
+  width: 150px;
+  height: 50px;
+  background: url(../images/icons/Search.png) no-repeat 7px;
+  background-color: white;
+  border-radius: 25px;
+  border: none;
+}
+
+header .main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .main-header .header-content {
+  color: white;
+  width: 675px;
+  margin-left: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .main-header .header-content .heading {
+  font-family: 'ReeyRegular';
+  font-size: 92px;
+}
+
+header .main-header .header-content h3 {
+  font-family: 'OpenSansBold';
+  font-style: italic;
+}
+
+header .main-header .header-content .button {
+  font-family: 'OpenSansBold';
+  font-size: 18px;
+  color: rgba(34, 34, 34, 0.952);
+  width: 180px;
+  height: 50px;
+  border-radius: 35px;
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+
+header .main-header .header-content .text {
+  width: 300px;
+  font-family: 'OpenSansBold';
+}
+
+header .main-header .food_image_1 {
+  position: relative;
+  margin-top: 190px;
+}
+
+header .main-header .food_image_1 .plate {
+  position: absolute;
+  left: 55px;
+}
+
+header .main-header .food_image_1 .sous {
+  position: absolute;
+  top: 500px;
+  left: -75px;
+}
+
+header .main-header .food_image_1 .leafes {
+  position: absolute;
+  top: 400px;
+  left: 150px;
+}
+
+main .first-screen {
+  width: 1445px;
+  height: 1055px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .first-screen h1 {
+  font-family: 'ReeyRegular';
+  font-size: 90px;
+}
+
+main .first-screen .headering {
+  font-family: 'OpenSans';
+  font-size: 25px;
+  text-align: center;
+}
+
+main .first-screen .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .first-screen .menu .content {
+  margin: 5px 50px 5px 50px;
+}
+
+main .first-screen .menu .content img {
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+main .first-screen .menu .content h3 {
+  font-family: 'OpenSansBold';
+  color: #333333;
+}
+
+main .first-screen .menu .content p {
+  width: 250px;
+}
+
+@-webkit-keyframes Cards {
+  25% {
+    -webkit-box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    -webkit-box-shadow: 5px 1px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+  75% {
+    -webkit-box-shadow: 7px 2px 7px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 2px 7px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    -webkit-box-shadow: 10px 2px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 10px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes Cards {
+  25% {
+    -webkit-box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    -webkit-box-shadow: 5px 1px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+  75% {
+    -webkit-box-shadow: 7px 2px 7px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 2px 7px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    -webkit-box-shadow: 10px 2px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 10px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+main .first-screen .menu .content:hover {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-animation: Cards 2s forwards linear;
+          animation: Cards 2s forwards linear;
+}
+
+main .first-screen .button {
+  display: block;
+  width: 250px;
+  height: 70px;
+  border-radius: 35px;
+  background-color: #343434;
+  color: white;
+  border: none;
+  font-family: 'OpenSansBold';
+  font-size: 18px;
+}
+
+@-webkit-keyframes button {
+  50% {
+    background-color: #9c9c9c;
+  }
+  100% {
+    color: #343434;
+    background-color: white;
+  }
+}
+
+@keyframes button {
+  50% {
+    background-color: #9c9c9c;
+  }
+  100% {
+    color: #343434;
+    background-color: white;
+  }
+}
+
+main .first-screen .button:hover {
+  -webkit-animation: button 0.5s forwards;
+          animation: button 0.5s forwards;
+}
+
+main .second-screen {
+  width: 1445px;
+  height: 560px;
+  margin: auto;
+  background-color: #27292c;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .second-screen h1 {
+  font-family: 'ReeyRegular';
+  font-size: 90px;
+}
+
+main .second-screen .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .second-screen .content p {
+  width: 490px;
+  font-family: 'OpenSans';
+}
+
+main .second-screen .button {
+  font-family: 'OpenSansBold';
+  font-size: 18px;
+  color: rgba(34, 34, 34, 0.952);
+  width: 180px;
+  height: 50px;
+  border-radius: 35px;
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+
+main .third-screen {
+  width: 1445px;
+  height: 1515px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+main .third-screen article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .third-screen article h3 {
+  font-family: 'OpenSansBold';
+  font-size: 56px;
+}
+
+main .third-screen article p {
+  font-family: 'OpenSans';
+  font-size: 36px;
+}
+
+main .third-screen article .button {
+  display: block;
+  width: 250px;
+  height: 70px;
+  border-radius: 35px;
+  background-color: #343434;
+  color: white;
+  border: none;
+  font-family: 'OpenSansBold';
+  font-size: 18px;
+  margin-left: 150px;
+}
+
+main .third-screen .right {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+main .fourth-screen {
+  width: 1445px;
+  height: 1055px;
+  background-image: url(../images/food/fourth-screen/Background.png);
+  margin: auto;
+  color: white;
+  position: relative;
+}
+
+main .fourth-screen .content {
+  position: absolute;
+  top: 50px;
+  left: 300px;
+  text-align: center;
+}
+
+main .fourth-screen h3 {
+  font-family: 'ReeyRegular';
+  font-size: 48px;
+}
+
+main .fourth-screen p {
+  font-family: 'OpenSansBold';
+  font-size: 16px;
+}
+
+main .fourth-screen .pizza {
+  position: absolute;
+  top: 400px;
+  left: 200px;
+}
+
+main .fourth-screen .leafes {
+  position: absolute;
+  left: -50px;
+  top: -150px;
+}
+
+main .fifth-screen {
+  width: 1280px;
+  height: 900px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .fifth-screen .content {
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .fifth-screen .content article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .fifth-screen .content article h3 {
+  font-family: 'ReeyRegular';
+  font-size: 36px;
+}
+
+main .fifth-screen .content article p {
+  font-family: 'OpenSans';
+  font-size: 24px;
+}
+
+main .fifth-screen .second-content {
+  margin-top: 250px;
+  text-align: center;
+}
+
+main .fifth-screen .second-content p {
+  margin-top: 25px;
+  font-family: 'OpenSans';
+  font-size: 18px;
+}
+
+main .sixth-screen {
+  width: 1280px;
+  height: 600px;
+  margin: auto;
+  background-color: #27292c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  position: relative;
+  padding-top: 150px;
+}
+
+main .sixth-screen h2 {
+  font-family: OpenSansBold;
+  font-size: 56px;
+}
+
+main .sixth-screen p {
+  font-family: OpenSans;
+  font-size: 25px;
+  text-align: center;
+}
+
+main .sixth-screen img {
+  position: absolute;
+  top: -90px;
+  left: -120px;
+}
+
+main .sixth-screen .email {
+  position: relative;
+}
+
+main .sixth-screen .email #email {
+  width: 500px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+main .sixth-screen .email .button {
+  position: absolute;
+  top: 2px;
+  left: 110px;
+  display: block;
+  width: 250px;
+  height: 55px;
+  border-radius: 25px;
+  background-color: #343434;
+  color: white;
+  border: none;
+  font-family: 'OpenSansBold';
+  font-size: 18px;
+  margin-left: 150px;
+}
+
+footer {
+  width: 1280px;
+  height: 600px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer h3 {
+  font-family: OpenSans;
+  font-size: 25px;
+}
+
+footer p {
+  font-family: OpenSans;
+  font-size: 15px;
+}
+
+footer ul {
+  padding: 0px;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+footer li a {
+  text-decoration: none;
+  color: black;
+}
+
+footer .first-content {
+  width: 450px;
+}
+
+footer .second-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .second-content nav {
+  margin-left: 50px;
+}
+/*# sourceMappingURL=style.css.map */
